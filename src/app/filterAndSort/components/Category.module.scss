@@ -1,0 +1,128 @@
+.adminBar {
+	display: flex;
+	justify-content: space-between;
+	min-height: 90px;
+	background: #f7f7f7;
+	align-items: center;
+	margin: 50px auto;
+}
+
+.ctaGroup {
+	display: flex;
+	justify-content: flex-end;
+	gap: 30px;
+}
+
+.singleProduct {
+	display: flex;
+	border: 1px solid #ececec;
+	border-radius: 5px;
+	padding: 30px 20px 20px;
+	margin-bottom: 40px;
+	position: relative;
+	background: #f7f7f7;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		gap: 50px;
+	}
+
+
+	.availableTop {
+		position: absolute;
+		top: -16px;
+		padding: 5px 20px;
+		background-color: #24596a;
+		border-radius: 7px;
+		color: #fff;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	.productPhoto {
+		width: 215px;
+		height: 190px;
+		overflow: hidden;
+		position: relative;
+		margin: auto;
+		border-radius: 5px;
+	}
+
+	.textWraper {
+		width: calc(100% - 215px);
+		margin-left: 30px;
+		@media only screen and (max-width: 768px) {
+		
+			width: 100%;
+			padding: 30px;
+			margin: 0;
+		
+	}
+		.mainText {
+			color: #1e4450;
+			font-weight: 400;
+		}
+
+		.circle {
+			display: flex;
+			gap: 30px;
+			margin-top: 20px;
+		}
+
+		.amount {
+			font-size: 20px;
+			color: #153b47;
+			margin-right: 10px;
+		}
+
+		.cardTitle {
+			margin-bottom: 20px;
+
+			.anchor {
+				line-height: 24px;
+				font-size: 25px;
+				color: #255a6b;
+				text-decoration: underline;
+				text-decoration-color: rgba(37, 90, 107, 0.4);
+			}
+
+			.underLink {
+				color: #8d8d8d;
+			}
+		}
+		.priceParent{
+			margin-top: 50px;
+		}
+	}
+
+	.actionGroup {
+		display: flex;
+		min-width: 250px;
+		gap: 10px;
+	}
+}
+
+.date {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 12px;
+	color: #cbcbcb;
+	font-weight: 600;
+}
+
+.checkbox {
+	margin-right: 5px;
+	border: solid 2px #a2afb9;
+	border-radius: 5px;
+}
+
+.mainSection {
+	h3 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+}

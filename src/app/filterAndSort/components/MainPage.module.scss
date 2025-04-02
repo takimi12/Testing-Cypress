@@ -1,0 +1,35 @@
+.mainWrapper {
+	display: flex;
+	margin: auto;
+	gap: 30px;
+    padding-top: 20px;
+	@media only screen and (max-width: 1200px) {
+		flex-direction: column;
+	}
+	.fitlersGroup {
+		min-width: 310px;
+	}
+}
+.Container {
+	margin: auto;
+	padding-top: 20px;
+	position: static;
+}
+.localContainer {
+	width: 100%;
+	padding: 0;
+	position: static;
+	margin: auto;
+	gap: 30px;
+	@media only screen and (min-width: 1200px) {
+		max-width: 1200px;
+	}
+	@media only screen and (max-width: 1200px) {
+		max-width: 900px;
+		margin: auto;
+	}
+	@media only screen and (max-width: 900px) {
+		max-width: 600px;
+		margin: auto;
+	}
+}
