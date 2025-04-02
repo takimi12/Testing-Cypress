@@ -36,7 +36,7 @@ interface RedditApiResponse {
   }
 }
 
-export default function InfiniteScrollList(): JSX.Element {
+export default function InfiniteScrollList() {
   const [items, setItems] = useState<RedditPost[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [endOfList, setEndOfList] = useState<boolean>(false);
